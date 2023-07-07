@@ -16,3 +16,4 @@ describe('GET /subscribers/names', () => {
     expect(res.body).toEqual({ message: 'error message' });
   });
 });
+console.log(describe);
