@@ -12,7 +12,7 @@ app.use(cors({
 
 
 // your code goes here
-app.get('/subscribers/names', async (req, res) => {
+app.get('/subscribers', async (req, res) => {
     try {
      // Fetch all subscribers from the database, selecting only the 'name' field
         const subscribers = await subscriberModel.find({}, 'name -_id')
@@ -28,7 +28,7 @@ app.get('/subscribers/names', async (req, res) => {
 
 
 
-app.get('/subscribers', async (req, res) => {
+app.get('/subscribers/names', async (req, res) => {
   try {
     // Fetch all subscribers from the database, selecting only the 'name' and 'subscribedChannel' fields
       const subscribers = await subscriberModel.find({}, 'name subscribedChannel -_id')
