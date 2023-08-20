@@ -9,7 +9,7 @@ const [subdetail, setSubdetail] = React.useState({});
 const { id } = useParams();
  // Fetch subscriber details when the component mounts or the ID changes
 useEffect(() => {
-  axios.get(`http://localhost:3002/subscribers/${id}`
+  axios.get(`https://subscribers-0exf.onrender.com/subscribers/${id}`
   + '?id=' + id)
 .then(res => setSubdetail(res.data))
 .catch(err => console.log(err));

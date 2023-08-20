@@ -8,7 +8,7 @@ useEffect(() => {
 async function fetchData() {
 try {
  // Make an asynchronous HTTP GET request to retrieve subscriber names
-const response = await axios.get('http://localhost:3002/subscribers/names');
+const response = await axios.get('https://subscribers-0exf.onrender.com/subscribers/names');
 setSubscriberNames(response.data);
 } catch (error) {
 console.error(error);

@@ -8,7 +8,7 @@ function Subscribers() {
     async function fetchData() {
       try {
         // Make an asynchronous HTTP GET request to retrieve subscribers
-        const response = await axios.get('http://localhost:3002/subscribers');
+        const response = await axios.get('https://subscribers-0exf.onrender.com/subscribers');
         setSubscribers(response.data);
       } catch (error) {
         console.error(error);
