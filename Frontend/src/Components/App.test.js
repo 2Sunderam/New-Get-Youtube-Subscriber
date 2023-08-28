@@ -40,7 +40,7 @@ describe('Subdetail component', () => {
     });
 
     // Ensure that the axios.get function was called with the correct URL
-    expect(axios.get).toHaveBeenCalledWith('https://subscribers-0exf.onrender.com/subscribers/123?id=123');
+    expect(axios.get).toHaveBeenCalledWith('https://subscribers-oyrz.onrender.com/subscribers/123?id=123');
   });
 });
 

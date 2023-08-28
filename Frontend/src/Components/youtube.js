@@ -8,7 +8,7 @@ function Subscribers() {
     async function fetchData() {
       try {
         // Make an asynchronous HTTP GET request to retrieve subscribers
-        const response = await axios.get('https://subscribers-0exf.onrender.com/subscribers');
+        const response = await axios.get('https://subscribers-oyrz.onrender.com/subscribers');
         setSubscribers(response.data);
       } catch (error) {
         console.error(error);
@@ -21,13 +21,18 @@ function Subscribers() {
     <div>
       {/* Render a list of subscribers */}
       <h2>Subscribers</h2>
+
       <ul>
-        {subscribers.map(subscriber => (
-          <li key={subscriber._id}>
-            {subscriber.name} ({subscriber.subscribedChannel})
+        {subscribers.map((name, index) => (
+          <li key={index}>
+            {name}
           </li>
         ))}
       </ul>
+
+
+
+  
     </div>
   );
 }

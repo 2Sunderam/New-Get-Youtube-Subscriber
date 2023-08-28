@@ -8,7 +8,7 @@ useEffect(() => {
 async function fetchData() {
 try {
  // Make an asynchronous HTTP GET request to retrieve subscriber names
-const response = await axios.get('https://subscribers-0exf.onrender.com/subscribers/names');
+const response = await axios.get('https://subscribers-oyrz.onrender.com/subscribers/names');
 setSubscriberNames(response.data);
 } catch (error) {
 console.error(error);
@@ -21,10 +21,12 @@ return (
 <div>
 <h2>Subscriber Names</h2>
 <ul>
-{subscriberNames.map(name => (
-<li key={name}>{name}</li>
-))}
-</ul>
+        {subscriberNames.map(subscriber => (
+          <li key={subscriber.name}>
+            {subscriber.name} - {subscriber.subscribedChannel}
+          </li>
+        ))}
+      </ul>
 </div>
 );
 }
