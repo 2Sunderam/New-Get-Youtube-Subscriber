@@ -23,7 +23,7 @@ app.use(cors({
 // your code goes here
 
 
-// Serving static files from the "public" directory (e.g., CSS, images)
+// Serving static files from the "src" directory (e.g., CSS, images)
 app.use(express.static('./src'));
 
 // Route to render the HTML file
